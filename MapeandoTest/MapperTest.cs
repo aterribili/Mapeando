@@ -14,10 +14,14 @@ namespace MapeandoTest
         {
             List<int> lista = new List<int>();
             lista.Add(23);
+            lista.Add(1);
+            lista.Add(1);
 
             List<String> novaLista = new Mapeador().mapeia(lista, new Mapa());
 
             Assert.AreEqual("23", novaLista[0]);
+            Assert.AreEqual("1", novaLista[1]);
+            Assert.AreEqual("1", novaLista[1]);
         }
     }
 }
