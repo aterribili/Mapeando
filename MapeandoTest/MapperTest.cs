@@ -17,11 +17,22 @@ namespace MapeandoTest
             lista.Add(1);
             lista.Add(1);
 
-            List<String> novaLista = new Mapeador().mapeia(lista, new Mapa());
+            List<String> novaLista = new Mapeador<int, String>().mapeia(lista, new Mapa());
 
             Assert.AreEqual("23", novaLista[0]);
             Assert.AreEqual("1", novaLista[1]);
             Assert.AreEqual("1", novaLista[1]);
+        }
+
+        [TestMethod]
+        public void DeveFiltrarListaInteiro()
+        {
+            List<int> lista = new List<int>();
+            lista.Add(20);
+
+            List<int> nova = new Filtrador<int>().filtra(lista, new FiltroInteiros());
+
+            Assert.AreEqual(20, nova[0]);
         }
     }
 }

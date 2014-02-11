@@ -6,14 +6,15 @@ using System.Threading.Tasks;
 
 namespace Mapeando
 {
-    public class Mapeador<F, T>
+    public class Filtrador<T>
     {
-        public List<T> mapeia(List<F> lista, Mapper<F, T> mapper)
+        public List<T> filtra(List<T> lista, Filter<T> filter)
         {
             List<T> novaLista = new List<T>();
 
-            foreach (F i in lista)
-                novaLista.Add(mapper.map(i));
+            foreach (T i in lista)
+                if (filter.map(i))
+                    novaLista.Add(i);
 
             return novaLista;
         }
