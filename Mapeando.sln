@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.21005.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mapeando", "Mapeando\Mapeando.csproj", "{C3F1ED84-82E4-4DA4-AE1E-39F0A27BC0B2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapeandoTest", "MapeandoTest\MapeandoTest.csproj", "{453E42B2-AEAD-4DB2-8030-A827E37A579E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{C3F1ED84-82E4-4DA4-AE1E-39F0A27BC0B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3F1ED84-82E4-4DA4-AE1E-39F0A27BC0B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3F1ED84-82E4-4DA4-AE1E-39F0A27BC0B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{453E42B2-AEAD-4DB2-8030-A827E37A579E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{453E42B2-AEAD-4DB2-8030-A827E37A579E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{453E42B2-AEAD-4DB2-8030-A827E37A579E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{453E42B2-AEAD-4DB2-8030-A827E37A579E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
