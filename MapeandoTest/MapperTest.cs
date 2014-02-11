@@ -24,15 +24,6 @@ namespace MapeandoTest
             Assert.AreEqual("1", novaLista[1]);
         }
 
-        [TestMethod]
-        public void DeveFiltrarListaInteiro()
-        {
-            List<int> lista = new List<int>();
-            lista.Add(20);
-
-            List<int> nova = new Filtrador<int>().filtra(lista, new FiltroInteiros());
-
-            Assert.AreEqual(20, nova[0]);
-        }
+        
     }
 }

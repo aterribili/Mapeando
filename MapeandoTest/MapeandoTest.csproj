@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="MapperTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FilterTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Mapeando\Mapeando.csproj">
