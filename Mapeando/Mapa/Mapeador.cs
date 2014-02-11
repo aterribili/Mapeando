@@ -8,12 +8,12 @@ namespace Mapeando
 {
     public class Mapeador<F, T>
     {
-        public List<T> mapeia(List<F> lista, Mapper<F, T> mapper)
+        public List<T> mapeia(List<F> lista, Func<F, T> f)
         {
             List<T> novaLista = new List<T>();
 
             foreach (F i in lista)
-                novaLista.Add(mapper.map(i));
+                novaLista.Add(f.Invoke(i));
 
             return novaLista;
         }

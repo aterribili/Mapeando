@@ -17,7 +17,8 @@ namespace MapeandoTest
             lista.Add(1);
             lista.Add(1);
 
-            List<String> novaLista = new Mapeador<int, String>().mapeia(lista, new Mapa());
+            Func<int, String> f = (i) => i+"";
+            List<String> novaLista = new Mapeador<int, String>().mapeia(lista, f);
 
             Assert.AreEqual("23", novaLista[0]);
             Assert.AreEqual("1", novaLista[1]);
