@@ -41,12 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Filter.cs" />
-    <Compile Include="Filtrador.cs" />
-    <Compile Include="FiltraInteiros.cs" />
-    <Compile Include="Mapa.cs" />
-    <Compile Include="Mapeador.cs" />
-    <Compile Include="Mapper.cs" />
+    <Compile Include="Filtro\Filter.cs" />
+    <Compile Include="Filtro\Filtrador.cs" />
+    <Compile Include="Filtro\FiltraInteiros.cs" />
+    <Compile Include="Filtro\FiltraUrl.cs" />
+    <Compile Include="Mapa\Mapa.cs" />
+    <Compile Include="Mapa\Mapeador.cs" />
+    <Compile Include="Mapa\Mapper.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
