@@ -10,7 +10,7 @@ namespace Mapeando
     {
         public String map(int from)
         {
-            return from+"";
+            return from.ToString();
         }
     }
 }

@@ -13,7 +13,7 @@ namespace Mapeando
             List<T> novaLista = new List<T>();
 
             foreach (F i in lista)
-                novaLista.Add(f.Invoke(i));
+                novaLista.Add(f(i));
 
             return novaLista;
         }

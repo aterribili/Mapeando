@@ -9,12 +9,12 @@ namespace Mapeando
 {
     public class Filtrador<T>
     {
-        public List<T> filtra(List<T> lista, Func<T, bool> f)
+        public List<T> filtra(List<T> lista, Predicate<T> f)
         {
             List<T> novaLista = new List<T>();
 
             foreach (T i in lista)
-                if (f.Invoke(i))
+                if (f(i))
                     novaLista.Add(i);
 
             return novaLista;

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Mapeando;
 using Mapeando.Filtro;
 using System.Text.RegularExpressions;
+using Mapeando2;
 
 namespace MapeandoTest
 {
@@ -17,9 +18,9 @@ namespace MapeandoTest
             lista.Add(19);
             lista.Add(20);
             
-            Func<int, bool> f = (i) => i % 2 == 0;
+            Predicate<int> funcao = (i) => i % 2 == 0;
 
-            List<int> nova = new Filtrador<int>().filtra(lista, f);
+            List<int> nova = lista.Filtra(funcao);
 
             Assert.AreEqual(20, nova[0]);
         }
@@ -33,7 +34,7 @@ namespace MapeandoTest
             lista.Add("c");
             lista.Add("http://www.google.com");
 
-            Func<String, bool> f = (s) => Regex.IsMatch(s, "^http(s)?://([\\w-]+.)+[\\w-]+(/[\\w- ./?%&=])?$");
+            Predicate<String> f = (s) => Regex.IsMatch(s, "^http(s)?://([\\w-]+.)+[\\w-]+(/[\\w- ./?%&=])?$");
             List<String> nova = new Filtrador<String>().filtra(lista, f);
 
             Assert.AreEqual("http://www.teste.com", nova[0]);

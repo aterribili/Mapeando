@@ -45,9 +45,11 @@
     <Compile Include="Filtro\Filtrador.cs" />
     <Compile Include="Filtro\FiltraInteiros.cs" />
     <Compile Include="Filtro\FiltraUrl.cs" />
+    <Compile Include="FilterExtension.cs" />
     <Compile Include="Mapa\Mapa.cs" />
     <Compile Include="Mapa\Mapeador.cs" />
     <Compile Include="Mapa\Mapper.cs" />
+    <Compile Include="MapperExtension.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
