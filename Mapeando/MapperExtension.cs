@@ -24,13 +24,11 @@ namespace Mapeando2
 
             // Guard
             if (lista.Count == 0)
-            {
                 return novaLista;
-            }
 
             novaLista.Add(converte(lista[0]));
             lista.RemoveAt(0);
-            novaLista.AddRange(MapRecursivo<F,T>(lista, converte));
+            novaLista.AddRange(MapRecursivo<F, T>(lista, converte));
 
             return novaLista;
         }

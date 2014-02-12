@@ -18,5 +18,22 @@ namespace Mapeando2
 
             return novaLista;
         }
+
+        public static List<T> FilterRecursivo<T>(this List<T> lista, Predicate<T> deveAdicionar)
+        {
+            var novaLista = new List<T>();
+
+            if (lista.Count == 0)
+                return novaLista;
+
+            if (deveAdicionar(lista[0]))
+                novaLista.Add(lista[0]);
+
+            lista.RemoveAt(0);
+
+            novaLista.AddRange(FilterRecursivo<T>(lista, deveAdicionar));
+            return novaLista;
+
+        }
     }
 }

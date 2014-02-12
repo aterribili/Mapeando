@@ -20,7 +20,7 @@ namespace MapeandoTest
             
             Predicate<int> funcao = (i) => i % 2 == 0;
 
-            List<int> nova = lista.Filtra(funcao);
+            List<int> nova = lista.FilterRecursivo(funcao);
 
             Assert.AreEqual(20, nova[0]);
         }
