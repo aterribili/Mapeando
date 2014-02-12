@@ -21,7 +21,7 @@ namespace MapeandoTest
 
             Func<int, String> f = (i) => i.ToString();
 
-            List<String> novaLista = lista.Mapeia(f);
+            List<String> novaLista = lista.MapRecursivo(f);
 
             Assert.AreEqual("23", novaLista[0]);
             Assert.AreEqual("1", novaLista[1]);
